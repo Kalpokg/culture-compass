@@ -1,0 +1,488 @@
+collected_at,city,keyword,filename,event_count,status
+2026-07-12T03:18:04,Berlin,jazz,20260712_031804_berlin_jazz.json,9,success
+2026-07-12T03:46:16,Berlin,jazz,0,,0,failed
+2026-07-12T03:46:16,Berlin,jazz,1,,0,failed
+2026-07-12T03:46:16,Berlin,jazz,2,,0,failed
+2026-07-12T03:46:16,Berlin,rock,0,,0,failed
+2026-07-12T03:46:16,Berlin,rock,1,,0,failed
+2026-07-12T03:46:16,Berlin,rock,2,,0,failed
+2026-07-12T03:46:16,Berlin,classical,0,,0,failed
+2026-07-12T03:46:16,Berlin,classical,1,,0,failed
+2026-07-12T03:46:16,Berlin,classical,2,,0,failed
+2026-07-12T03:46:16,Berlin,opera,0,,0,failed
+2026-07-12T03:46:16,Berlin,opera,1,,0,failed
+2026-07-12T03:46:16,Berlin,opera,2,,0,failed
+2026-07-12T03:46:16,Berlin,museum,0,,0,failed
+2026-07-12T03:46:16,Berlin,museum,1,,0,failed
+2026-07-12T03:46:16,Berlin,museum,2,,0,failed
+2026-07-12T03:46:16,Berlin,exhibition,0,,0,failed
+2026-07-12T03:46:16,Berlin,exhibition,1,,0,failed
+2026-07-12T03:46:16,Berlin,exhibition,2,,0,failed
+2026-07-12T03:46:16,Berlin,film festival,0,,0,failed
+2026-07-12T03:46:16,Berlin,film festival,1,,0,failed
+2026-07-12T03:46:16,Berlin,film festival,2,,0,failed
+2026-07-12T03:46:16,Berlin,comedy,0,,0,failed
+2026-07-12T03:46:16,Berlin,comedy,1,,0,failed
+2026-07-12T03:46:16,Berlin,comedy,2,,0,failed
+2026-07-12T03:46:16,Berlin,theatre,0,,0,failed
+2026-07-12T03:46:16,Berlin,theatre,1,,0,failed
+2026-07-12T03:46:16,Berlin,theatre,2,,0,failed
+2026-07-12T03:46:16,Amsterdam,jazz,0,,0,failed
+2026-07-12T03:46:16,Amsterdam,jazz,1,,0,failed
+2026-07-12T03:46:16,Amsterdam,jazz,2,,0,failed
+2026-07-12T03:46:16,Amsterdam,rock,0,,0,failed
+2026-07-12T03:46:16,Amsterdam,rock,1,,0,failed
+2026-07-12T03:46:16,Amsterdam,rock,2,,0,failed
+2026-07-12T03:46:16,Amsterdam,classical,0,,0,failed
+2026-07-12T03:46:16,Amsterdam,classical,1,,0,failed
+2026-07-12T03:46:16,Amsterdam,classical,2,,0,failed
+2026-07-12T03:46:16,Amsterdam,opera,0,,0,failed
+2026-07-12T03:46:16,Amsterdam,opera,1,,0,failed
+2026-07-12T03:46:16,Amsterdam,opera,2,,0,failed
+2026-07-12T03:46:16,Amsterdam,museum,0,,0,failed
+2026-07-12T03:46:16,Amsterdam,museum,1,,0,failed
+2026-07-12T03:46:16,Amsterdam,museum,2,,0,failed
+2026-07-12T03:46:16,Amsterdam,exhibition,0,,0,failed
+2026-07-12T03:46:16,Amsterdam,exhibition,1,,0,failed
+2026-07-12T03:46:16,Amsterdam,exhibition,2,,0,failed
+2026-07-12T03:46:16,Amsterdam,film festival,0,,0,failed
+2026-07-12T03:46:16,Amsterdam,film festival,1,,0,failed
+2026-07-12T03:46:16,Amsterdam,film festival,2,,0,failed
+2026-07-12T03:46:16,Amsterdam,comedy,0,,0,failed
+2026-07-12T03:46:16,Amsterdam,comedy,1,,0,failed
+2026-07-12T03:46:16,Amsterdam,comedy,2,,0,failed
+2026-07-12T03:46:16,Amsterdam,theatre,0,,0,failed
+2026-07-12T03:46:16,Amsterdam,theatre,1,,0,failed
+2026-07-12T03:46:16,Amsterdam,theatre,2,,0,failed
+2026-07-12T03:46:16,Paris,jazz,0,,0,failed
+2026-07-12T03:46:16,Paris,jazz,1,,0,failed
+2026-07-12T03:46:16,Paris,jazz,2,,0,failed
+2026-07-12T03:46:16,Paris,rock,0,,0,failed
+2026-07-12T03:46:16,Paris,rock,1,,0,failed
+2026-07-12T03:46:16,Paris,rock,2,,0,failed
+2026-07-12T03:46:16,Paris,classical,0,,0,failed
+2026-07-12T03:46:16,Paris,classical,1,,0,failed
+2026-07-12T03:46:16,Paris,classical,2,,0,failed
+2026-07-12T03:46:16,Paris,opera,0,,0,failed
+2026-07-12T03:46:16,Paris,opera,1,,0,failed
+2026-07-12T03:46:16,Paris,opera,2,,0,failed
+2026-07-12T03:46:16,Paris,museum,0,,0,failed
+2026-07-12T03:46:16,Paris,museum,1,,0,failed
+2026-07-12T03:46:16,Paris,museum,2,,0,failed
+2026-07-12T03:46:16,Paris,exhibition,0,,0,failed
+2026-07-12T03:46:16,Paris,exhibition,1,,0,failed
+2026-07-12T03:46:16,Paris,exhibition,2,,0,failed
+2026-07-12T03:46:16,Paris,film festival,0,,0,failed
+2026-07-12T03:46:16,Paris,film festival,1,,0,failed
+2026-07-12T03:46:16,Paris,film festival,2,,0,failed
+2026-07-12T03:46:16,Paris,comedy,0,,0,failed
+2026-07-12T03:46:16,Paris,comedy,1,,0,failed
+2026-07-12T03:46:16,Paris,comedy,2,,0,failed
+2026-07-12T03:46:16,Paris,theatre,0,,0,failed
+2026-07-12T03:46:16,Paris,theatre,1,,0,failed
+2026-07-12T03:46:16,Paris,theatre,2,,0,failed
+2026-07-12T03:46:16,London,jazz,0,,0,failed
+2026-07-12T03:46:16,London,jazz,1,,0,failed
+2026-07-12T03:46:16,London,jazz,2,,0,failed
+2026-07-12T03:46:16,London,rock,0,,0,failed
+2026-07-12T03:46:16,London,rock,1,,0,failed
+2026-07-12T03:46:16,London,rock,2,,0,failed
+2026-07-12T03:46:16,London,classical,0,,0,failed
+2026-07-12T03:46:16,London,classical,1,,0,failed
+2026-07-12T03:46:16,London,classical,2,,0,failed
+2026-07-12T03:46:16,London,opera,0,,0,failed
+2026-07-12T03:46:16,London,opera,1,,0,failed
+2026-07-12T03:46:16,London,opera,2,,0,failed
+2026-07-12T03:46:16,London,museum,0,,0,failed
+2026-07-12T03:46:16,London,museum,1,,0,failed
+2026-07-12T03:46:16,London,museum,2,,0,failed
+2026-07-12T03:46:16,London,exhibition,0,,0,failed
+2026-07-12T03:46:16,London,exhibition,1,,0,failed
+2026-07-12T03:46:16,London,exhibition,2,,0,failed
+2026-07-12T03:46:16,London,film festival,0,,0,failed
+2026-07-12T03:46:16,London,film festival,1,,0,failed
+2026-07-12T03:46:16,London,film festival,2,,0,failed
+2026-07-12T03:46:16,London,comedy,0,,0,failed
+2026-07-12T03:46:16,London,comedy,1,,0,failed
+2026-07-12T03:46:16,London,comedy,2,,0,failed
+2026-07-12T03:46:16,London,theatre,0,,0,failed
+2026-07-12T03:46:16,London,theatre,1,,0,failed
+2026-07-12T03:46:16,London,theatre,2,,0,failed
+2026-07-12T03:46:16,Vienna,jazz,0,,0,failed
+2026-07-12T03:46:16,Vienna,jazz,1,,0,failed
+2026-07-12T03:46:16,Vienna,jazz,2,,0,failed
+2026-07-12T03:46:16,Vienna,rock,0,,0,failed
+2026-07-12T03:46:16,Vienna,rock,1,,0,failed
+2026-07-12T03:46:16,Vienna,rock,2,,0,failed
+2026-07-12T03:46:16,Vienna,classical,0,,0,failed
+2026-07-12T03:46:16,Vienna,classical,1,,0,failed
+2026-07-12T03:46:16,Vienna,classical,2,,0,failed
+2026-07-12T03:46:16,Vienna,opera,0,,0,failed
+2026-07-12T03:46:16,Vienna,opera,1,,0,failed
+2026-07-12T03:46:16,Vienna,opera,2,,0,failed
+2026-07-12T03:46:16,Vienna,museum,0,,0,failed
+2026-07-12T03:46:16,Vienna,museum,1,,0,failed
+2026-07-12T03:46:16,Vienna,museum,2,,0,failed
+2026-07-12T03:46:16,Vienna,exhibition,0,,0,failed
+2026-07-12T03:46:16,Vienna,exhibition,1,,0,failed
+2026-07-12T03:46:16,Vienna,exhibition,2,,0,failed
+2026-07-12T03:46:16,Vienna,film festival,0,,0,failed
+2026-07-12T03:46:16,Vienna,film festival,1,,0,failed
+2026-07-12T03:46:16,Vienna,film festival,2,,0,failed
+2026-07-12T03:46:16,Vienna,comedy,0,,0,failed
+2026-07-12T03:46:16,Vienna,comedy,1,,0,failed
+2026-07-12T03:46:16,Vienna,comedy,2,,0,failed
+2026-07-12T03:46:16,Vienna,theatre,0,,0,failed
+2026-07-12T03:46:16,Vienna,theatre,1,,0,failed
+2026-07-12T03:46:16,Vienna,theatre,2,,0,failed
+2026-07-12T03:46:16,Barcelona,jazz,0,,0,failed
+2026-07-12T03:46:16,Barcelona,jazz,1,,0,failed
+2026-07-12T03:46:16,Barcelona,jazz,2,,0,failed
+2026-07-12T03:46:16,Barcelona,rock,0,,0,failed
+2026-07-12T03:46:16,Barcelona,rock,1,,0,failed
+2026-07-12T03:46:16,Barcelona,rock,2,,0,failed
+2026-07-12T03:46:16,Barcelona,classical,0,,0,failed
+2026-07-12T03:46:16,Barcelona,classical,1,,0,failed
+2026-07-12T03:46:16,Barcelona,classical,2,,0,failed
+2026-07-12T03:46:16,Barcelona,opera,0,,0,failed
+2026-07-12T03:46:16,Barcelona,opera,1,,0,failed
+2026-07-12T03:46:16,Barcelona,opera,2,,0,failed
+2026-07-12T03:46:16,Barcelona,museum,0,,0,failed
+2026-07-12T03:46:16,Barcelona,museum,1,,0,failed
+2026-07-12T03:46:16,Barcelona,museum,2,,0,failed
+2026-07-12T03:46:16,Barcelona,exhibition,0,,0,failed
+2026-07-12T03:46:16,Barcelona,exhibition,1,,0,failed
+2026-07-12T03:46:16,Barcelona,exhibition,2,,0,failed
+2026-07-12T03:46:16,Barcelona,film festival,0,,0,failed
+2026-07-12T03:46:16,Barcelona,film festival,1,,0,failed
+2026-07-12T03:46:16,Barcelona,film festival,2,,0,failed
+2026-07-12T03:46:16,Barcelona,comedy,0,,0,failed
+2026-07-12T03:46:16,Barcelona,comedy,1,,0,failed
+2026-07-12T03:46:16,Barcelona,comedy,2,,0,failed
+2026-07-12T03:46:16,Barcelona,theatre,0,,0,failed
+2026-07-12T03:46:16,Barcelona,theatre,1,,0,failed
+2026-07-12T03:46:16,Barcelona,theatre,2,,0,failed
+2026-07-12T03:47:08,Berlin,jazz,0,,0,failed
+2026-07-12T03:47:08,Berlin,jazz,1,,0,failed
+2026-07-12T03:47:08,Berlin,jazz,2,,0,failed
+2026-07-12T03:47:08,Berlin,rock,0,,0,failed
+2026-07-12T03:47:08,Berlin,rock,1,,0,failed
+2026-07-12T03:47:08,Berlin,rock,2,,0,failed
+2026-07-12T03:47:08,Berlin,classical,0,,0,failed
+2026-07-12T03:47:08,Berlin,classical,1,,0,failed
+2026-07-12T03:47:08,Berlin,classical,2,,0,failed
+2026-07-12T03:47:08,Berlin,opera,0,,0,failed
+2026-07-12T03:47:08,Berlin,opera,1,,0,failed
+2026-07-12T03:47:08,Berlin,opera,2,,0,failed
+2026-07-12T03:47:08,Berlin,museum,0,,0,failed
+2026-07-12T03:47:08,Berlin,museum,1,,0,failed
+2026-07-12T03:47:08,Berlin,museum,2,,0,failed
+2026-07-12T03:47:08,Berlin,exhibition,0,,0,failed
+2026-07-12T03:47:08,Berlin,exhibition,1,,0,failed
+2026-07-12T03:47:08,Berlin,exhibition,2,,0,failed
+2026-07-12T03:47:08,Berlin,film festival,0,,0,failed
+2026-07-12T03:47:08,Berlin,film festival,1,,0,failed
+2026-07-12T03:47:08,Berlin,film festival,2,,0,failed
+2026-07-12T03:47:08,Berlin,comedy,0,,0,failed
+2026-07-12T03:47:08,Berlin,comedy,1,,0,failed
+2026-07-12T03:47:08,Berlin,comedy,2,,0,failed
+2026-07-12T03:47:08,Berlin,theatre,0,,0,failed
+2026-07-12T03:47:08,Berlin,theatre,1,,0,failed
+2026-07-12T03:47:08,Berlin,theatre,2,,0,failed
+2026-07-12T03:47:08,Amsterdam,jazz,0,,0,failed
+2026-07-12T03:47:08,Amsterdam,jazz,1,,0,failed
+2026-07-12T03:47:08,Amsterdam,jazz,2,,0,failed
+2026-07-12T03:47:08,Amsterdam,rock,0,,0,failed
+2026-07-12T03:47:08,Amsterdam,rock,1,,0,failed
+2026-07-12T03:47:08,Amsterdam,rock,2,,0,failed
+2026-07-12T03:47:08,Amsterdam,classical,0,,0,failed
+2026-07-12T03:47:08,Amsterdam,classical,1,,0,failed
+2026-07-12T03:47:08,Amsterdam,classical,2,,0,failed
+2026-07-12T03:47:08,Amsterdam,opera,0,,0,failed
+2026-07-12T03:47:08,Amsterdam,opera,1,,0,failed
+2026-07-12T03:47:08,Amsterdam,opera,2,,0,failed
+2026-07-12T03:47:08,Amsterdam,museum,0,,0,failed
+2026-07-12T03:47:08,Amsterdam,museum,1,,0,failed
+2026-07-12T03:47:08,Amsterdam,museum,2,,0,failed
+2026-07-12T03:47:08,Amsterdam,exhibition,0,,0,failed
+2026-07-12T03:47:08,Amsterdam,exhibition,1,,0,failed
+2026-07-12T03:47:08,Amsterdam,exhibition,2,,0,failed
+2026-07-12T03:47:08,Amsterdam,film festival,0,,0,failed
+2026-07-12T03:47:08,Amsterdam,film festival,1,,0,failed
+2026-07-12T03:47:08,Amsterdam,film festival,2,,0,failed
+2026-07-12T03:47:08,Amsterdam,comedy,0,,0,failed
+2026-07-12T03:47:08,Amsterdam,comedy,1,,0,failed
+2026-07-12T03:47:08,Amsterdam,comedy,2,,0,failed
+2026-07-12T03:47:08,Amsterdam,theatre,0,,0,failed
+2026-07-12T03:47:08,Amsterdam,theatre,1,,0,failed
+2026-07-12T03:47:08,Amsterdam,theatre,2,,0,failed
+2026-07-12T03:47:08,Paris,jazz,0,,0,failed
+2026-07-12T03:47:08,Paris,jazz,1,,0,failed
+2026-07-12T03:47:08,Paris,jazz,2,,0,failed
+2026-07-12T03:47:08,Paris,rock,0,,0,failed
+2026-07-12T03:47:08,Paris,rock,1,,0,failed
+2026-07-12T03:47:08,Paris,rock,2,,0,failed
+2026-07-12T03:47:08,Paris,classical,0,,0,failed
+2026-07-12T03:47:08,Paris,classical,1,,0,failed
+2026-07-12T03:47:08,Paris,classical,2,,0,failed
+2026-07-12T03:47:08,Paris,opera,0,,0,failed
+2026-07-12T03:47:08,Paris,opera,1,,0,failed
+2026-07-12T03:47:08,Paris,opera,2,,0,failed
+2026-07-12T03:47:08,Paris,museum,0,,0,failed
+2026-07-12T03:47:08,Paris,museum,1,,0,failed
+2026-07-12T03:47:08,Paris,museum,2,,0,failed
+2026-07-12T03:47:08,Paris,exhibition,0,,0,failed
+2026-07-12T03:47:08,Paris,exhibition,1,,0,failed
+2026-07-12T03:47:08,Paris,exhibition,2,,0,failed
+2026-07-12T03:47:08,Paris,film festival,0,,0,failed
+2026-07-12T03:47:08,Paris,film festival,1,,0,failed
+2026-07-12T03:47:08,Paris,film festival,2,,0,failed
+2026-07-12T03:47:08,Paris,comedy,0,,0,failed
+2026-07-12T03:47:08,Paris,comedy,1,,0,failed
+2026-07-12T03:47:09,Paris,comedy,2,,0,failed
+2026-07-12T03:47:09,Paris,theatre,0,,0,failed
+2026-07-12T03:47:09,Paris,theatre,1,,0,failed
+2026-07-12T03:47:09,Paris,theatre,2,,0,failed
+2026-07-12T03:47:09,London,jazz,0,,0,failed
+2026-07-12T03:47:09,London,jazz,1,,0,failed
+2026-07-12T03:47:09,London,jazz,2,,0,failed
+2026-07-12T03:47:09,London,rock,0,,0,failed
+2026-07-12T03:47:09,London,rock,1,,0,failed
+2026-07-12T03:47:09,London,rock,2,,0,failed
+2026-07-12T03:47:09,London,classical,0,,0,failed
+2026-07-12T03:47:09,London,classical,1,,0,failed
+2026-07-12T03:47:09,London,classical,2,,0,failed
+2026-07-12T03:47:09,London,opera,0,,0,failed
+2026-07-12T03:47:09,London,opera,1,,0,failed
+2026-07-12T03:47:09,London,opera,2,,0,failed
+2026-07-12T03:47:09,London,museum,0,,0,failed
+2026-07-12T03:47:09,London,museum,1,,0,failed
+2026-07-12T03:47:09,London,museum,2,,0,failed
+2026-07-12T03:47:09,London,exhibition,0,,0,failed
+2026-07-12T03:47:09,London,exhibition,1,,0,failed
+2026-07-12T03:47:09,London,exhibition,2,,0,failed
+2026-07-12T03:47:09,London,film festival,0,,0,failed
+2026-07-12T03:47:09,London,film festival,1,,0,failed
+2026-07-12T03:47:09,London,film festival,2,,0,failed
+2026-07-12T03:47:09,London,comedy,0,,0,failed
+2026-07-12T03:47:09,London,comedy,1,,0,failed
+2026-07-12T03:47:09,London,comedy,2,,0,failed
+2026-07-12T03:47:09,London,theatre,0,,0,failed
+2026-07-12T03:47:09,London,theatre,1,,0,failed
+2026-07-12T03:47:09,London,theatre,2,,0,failed
+2026-07-12T03:47:09,Vienna,jazz,0,,0,failed
+2026-07-12T03:47:09,Vienna,jazz,1,,0,failed
+2026-07-12T03:47:09,Vienna,jazz,2,,0,failed
+2026-07-12T03:47:09,Vienna,rock,0,,0,failed
+2026-07-12T03:47:09,Vienna,rock,1,,0,failed
+2026-07-12T03:47:09,Vienna,rock,2,,0,failed
+2026-07-12T03:47:09,Vienna,classical,0,,0,failed
+2026-07-12T03:47:09,Vienna,classical,1,,0,failed
+2026-07-12T03:47:09,Vienna,classical,2,,0,failed
+2026-07-12T03:47:09,Vienna,opera,0,,0,failed
+2026-07-12T03:47:09,Vienna,opera,1,,0,failed
+2026-07-12T03:47:09,Vienna,opera,2,,0,failed
+2026-07-12T03:47:09,Vienna,museum,0,,0,failed
+2026-07-12T03:47:09,Vienna,museum,1,,0,failed
+2026-07-12T03:47:09,Vienna,museum,2,,0,failed
+2026-07-12T03:47:09,Vienna,exhibition,0,,0,failed
+2026-07-12T03:47:09,Vienna,exhibition,1,,0,failed
+2026-07-12T03:47:09,Vienna,exhibition,2,,0,failed
+2026-07-12T03:47:09,Vienna,film festival,0,,0,failed
+2026-07-12T03:47:09,Vienna,film festival,1,,0,failed
+2026-07-12T03:47:09,Vienna,film festival,2,,0,failed
+2026-07-12T03:47:09,Vienna,comedy,0,,0,failed
+2026-07-12T03:47:09,Vienna,comedy,1,,0,failed
+2026-07-12T03:47:09,Vienna,comedy,2,,0,failed
+2026-07-12T03:47:09,Vienna,theatre,0,,0,failed
+2026-07-12T03:47:09,Vienna,theatre,1,,0,failed
+2026-07-12T03:47:09,Vienna,theatre,2,,0,failed
+2026-07-12T03:47:09,Barcelona,jazz,0,,0,failed
+2026-07-12T03:47:09,Barcelona,jazz,1,,0,failed
+2026-07-12T03:47:09,Barcelona,jazz,2,,0,failed
+2026-07-12T03:47:09,Barcelona,rock,0,,0,failed
+2026-07-12T03:47:09,Barcelona,rock,1,,0,failed
+2026-07-12T03:47:09,Barcelona,rock,2,,0,failed
+2026-07-12T03:47:09,Barcelona,classical,0,,0,failed
+2026-07-12T03:47:09,Barcelona,classical,1,,0,failed
+2026-07-12T03:47:09,Barcelona,classical,2,,0,failed
+2026-07-12T03:47:09,Barcelona,opera,0,,0,failed
+2026-07-12T03:47:09,Barcelona,opera,1,,0,failed
+2026-07-12T03:47:09,Barcelona,opera,2,,0,failed
+2026-07-12T03:47:09,Barcelona,museum,0,,0,failed
+2026-07-12T03:47:09,Barcelona,museum,1,,0,failed
+2026-07-12T03:47:09,Barcelona,museum,2,,0,failed
+2026-07-12T03:47:09,Barcelona,exhibition,0,,0,failed
+2026-07-12T03:47:09,Barcelona,exhibition,1,,0,failed
+2026-07-12T03:47:09,Barcelona,exhibition,2,,0,failed
+2026-07-12T03:47:09,Barcelona,film festival,0,,0,failed
+2026-07-12T03:47:09,Barcelona,film festival,1,,0,failed
+2026-07-12T03:47:09,Barcelona,film festival,2,,0,failed
+2026-07-12T03:47:09,Barcelona,comedy,0,,0,failed
+2026-07-12T03:47:09,Barcelona,comedy,1,,0,failed
+2026-07-12T03:47:09,Barcelona,comedy,2,,0,failed
+2026-07-12T03:47:09,Barcelona,theatre,0,,0,failed
+2026-07-12T03:47:09,Barcelona,theatre,1,,0,failed
+2026-07-12T03:47:09,Barcelona,theatre,2,,0,failed
+2026-07-12T03:48:55,Berlin,jazz,0,20260712T034855_berlin_jazz_page0.json,9,success
+2026-07-12T03:48:57,Berlin,jazz,1,20260712T034857_berlin_jazz_page1.json,0,success
+2026-07-12T03:48:58,Berlin,jazz,2,20260712T034858_berlin_jazz_page2.json,0,success
+2026-07-12T03:49:00,Berlin,rock,0,20260712T034900_berlin_rock_page0.json,187,success
+2026-07-12T03:49:01,Berlin,rock,1,20260712T034901_berlin_rock_page1.json,0,success
+2026-07-12T03:49:03,Berlin,rock,2,20260712T034903_berlin_rock_page2.json,0,success
+2026-07-12T03:49:05,Berlin,classical,0,20260712T034905_berlin_classical_page0.json,32,success
+2026-07-12T03:49:06,Berlin,classical,1,20260712T034906_berlin_classical_page1.json,0,success
+2026-07-12T03:49:07,Berlin,classical,2,20260712T034907_berlin_classical_page2.json,0,success
+2026-07-12T03:49:08,Berlin,opera,0,20260712T034908_berlin_opera_page0.json,1,success
+2026-07-12T03:49:10,Berlin,opera,1,20260712T034910_berlin_opera_page1.json,0,success
+2026-07-12T03:49:11,Berlin,opera,2,20260712T034911_berlin_opera_page2.json,0,success
+2026-07-12T03:49:12,Berlin,museum,0,20260712T034912_berlin_museum_page0.json,0,success
+2026-07-12T03:49:13,Berlin,museum,1,20260712T034913_berlin_museum_page1.json,0,success
+2026-07-12T03:49:14,Berlin,museum,2,20260712T034914_berlin_museum_page2.json,0,success
+2026-07-12T03:49:15,Berlin,exhibition,0,20260712T034915_berlin_exhibition_page0.json,0,success
+2026-07-12T03:49:16,Berlin,exhibition,1,20260712T034916_berlin_exhibition_page1.json,0,success
+2026-07-12T03:49:18,Berlin,exhibition,2,20260712T034918_berlin_exhibition_page2.json,0,success
+2026-07-12T03:49:19,Berlin,film festival,0,20260712T034919_berlin_film_festival_page0.json,0,success
+2026-07-12T03:49:20,Berlin,film festival,1,20260712T034920_berlin_film_festival_page1.json,0,success
+2026-07-12T03:49:22,Berlin,film festival,2,20260712T034922_berlin_film_festival_page2.json,0,success
+2026-07-12T03:49:23,Berlin,comedy,0,20260712T034923_berlin_comedy_page0.json,69,success
+2026-07-12T03:49:24,Berlin,comedy,1,20260712T034924_berlin_comedy_page1.json,0,success
+2026-07-12T03:49:26,Berlin,comedy,2,20260712T034926_berlin_comedy_page2.json,0,success
+2026-07-12T03:49:28,Berlin,theatre,0,20260712T034928_berlin_theatre_page0.json,200,success
+2026-07-12T03:49:30,Berlin,theatre,1,20260712T034930_berlin_theatre_page1.json,200,success
+2026-07-12T03:49:31,Berlin,theatre,2,20260712T034931_berlin_theatre_page2.json,58,success
+2026-07-12T03:49:32,Amsterdam,jazz,0,20260712T034932_amsterdam_jazz_page0.json,7,success
+2026-07-12T03:49:34,Amsterdam,jazz,1,20260712T034934_amsterdam_jazz_page1.json,0,success
+2026-07-12T03:49:35,Amsterdam,jazz,2,20260712T034935_amsterdam_jazz_page2.json,0,success
+2026-07-12T03:49:37,Amsterdam,rock,0,20260712T034937_amsterdam_rock_page0.json,200,success
+2026-07-12T03:49:39,Amsterdam,rock,1,20260712T034939_amsterdam_rock_page1.json,103,success
+2026-07-12T03:49:40,Amsterdam,rock,2,20260712T034940_amsterdam_rock_page2.json,0,success
+2026-07-12T03:49:41,Amsterdam,classical,0,20260712T034941_amsterdam_classical_page0.json,10,success
+2026-07-12T03:49:43,Amsterdam,classical,1,20260712T034943_amsterdam_classical_page1.json,0,success
+2026-07-12T03:49:44,Amsterdam,classical,2,20260712T034944_amsterdam_classical_page2.json,0,success
+2026-07-12T03:49:45,Amsterdam,opera,0,20260712T034945_amsterdam_opera_page0.json,0,success
+2026-07-12T03:49:46,Amsterdam,opera,1,20260712T034946_amsterdam_opera_page1.json,0,success
+2026-07-12T03:49:48,Amsterdam,opera,2,20260712T034948_amsterdam_opera_page2.json,0,success
+2026-07-12T03:49:49,Amsterdam,museum,0,20260712T034949_amsterdam_museum_page0.json,0,success
+2026-07-12T03:49:50,Amsterdam,museum,1,20260712T034950_amsterdam_museum_page1.json,0,success
+2026-07-12T03:49:51,Amsterdam,museum,2,20260712T034951_amsterdam_museum_page2.json,0,success
+2026-07-12T03:49:52,Amsterdam,exhibition,0,20260712T034952_amsterdam_exhibition_page0.json,0,success
+2026-07-12T03:49:53,Amsterdam,exhibition,1,20260712T034953_amsterdam_exhibition_page1.json,0,success
+2026-07-12T03:49:55,Amsterdam,exhibition,2,20260712T034955_amsterdam_exhibition_page2.json,0,success
+2026-07-12T03:49:56,Amsterdam,film festival,0,20260712T034956_amsterdam_film_festival_page0.json,0,success
+2026-07-12T03:49:57,Amsterdam,film festival,1,20260712T034957_amsterdam_film_festival_page1.json,0,success
+2026-07-12T03:49:59,Amsterdam,film festival,2,20260712T034959_amsterdam_film_festival_page2.json,0,success
+2026-07-12T03:50:00,Amsterdam,comedy,0,20260712T035000_amsterdam_comedy_page0.json,50,success
+2026-07-12T03:50:01,Amsterdam,comedy,1,20260712T035001_amsterdam_comedy_page1.json,0,success
+2026-07-12T03:50:02,Amsterdam,comedy,2,20260712T035002_amsterdam_comedy_page2.json,0,success
+2026-07-12T03:50:08,Amsterdam,theatre,0,20260712T035008_amsterdam_theatre_page0.json,85,success
+2026-07-12T03:50:09,Amsterdam,theatre,1,20260712T035009_amsterdam_theatre_page1.json,0,success
+2026-07-12T03:50:10,Amsterdam,theatre,2,20260712T035010_amsterdam_theatre_page2.json,0,success
+2026-07-12T03:50:12,Paris,jazz,0,20260712T035012_paris_jazz_page0.json,0,success
+2026-07-12T03:50:13,Paris,jazz,1,20260712T035013_paris_jazz_page1.json,0,success
+2026-07-12T03:50:14,Paris,jazz,2,20260712T035014_paris_jazz_page2.json,0,success
+2026-07-12T03:50:15,Paris,rock,0,20260712T035015_paris_rock_page0.json,0,success
+2026-07-12T03:50:16,Paris,rock,1,20260712T035016_paris_rock_page1.json,0,success
+2026-07-12T03:50:18,Paris,rock,2,20260712T035018_paris_rock_page2.json,0,success
+2026-07-12T03:50:19,Paris,classical,0,20260712T035019_paris_classical_page0.json,0,success
+2026-07-12T03:50:20,Paris,classical,1,20260712T035020_paris_classical_page1.json,0,success
+2026-07-12T03:50:21,Paris,classical,2,20260712T035021_paris_classical_page2.json,0,success
+2026-07-12T03:50:22,Paris,opera,0,20260712T035022_paris_opera_page0.json,0,success
+2026-07-12T03:50:24,Paris,opera,1,20260712T035024_paris_opera_page1.json,0,success
+2026-07-12T03:50:25,Paris,opera,2,20260712T035025_paris_opera_page2.json,0,success
+2026-07-12T03:50:26,Paris,museum,0,20260712T035026_paris_museum_page0.json,0,success
+2026-07-12T03:50:27,Paris,museum,1,20260712T035027_paris_museum_page1.json,0,success
+2026-07-12T03:50:28,Paris,museum,2,20260712T035028_paris_museum_page2.json,0,success
+2026-07-12T03:50:29,Paris,exhibition,0,20260712T035029_paris_exhibition_page0.json,0,success
+2026-07-12T03:50:30,Paris,exhibition,1,20260712T035030_paris_exhibition_page1.json,0,success
+2026-07-12T03:50:32,Paris,exhibition,2,20260712T035032_paris_exhibition_page2.json,0,success
+2026-07-12T03:50:33,Paris,film festival,0,20260712T035033_paris_film_festival_page0.json,0,success
+2026-07-12T03:50:34,Paris,film festival,1,20260712T035034_paris_film_festival_page1.json,0,success
+2026-07-12T03:50:35,Paris,film festival,2,20260712T035035_paris_film_festival_page2.json,0,success
+2026-07-12T03:50:36,Paris,comedy,0,20260712T035036_paris_comedy_page0.json,0,success
+2026-07-12T03:50:37,Paris,comedy,1,20260712T035037_paris_comedy_page1.json,0,success
+2026-07-12T03:50:39,Paris,comedy,2,20260712T035039_paris_comedy_page2.json,0,success
+2026-07-12T03:50:40,Paris,theatre,0,20260712T035040_paris_theatre_page0.json,0,success
+2026-07-12T03:50:41,Paris,theatre,1,20260712T035041_paris_theatre_page1.json,0,success
+2026-07-12T03:50:42,Paris,theatre,2,20260712T035042_paris_theatre_page2.json,0,success
+2026-07-12T03:50:44,London,jazz,0,20260712T035044_london_jazz_page0.json,200,success
+2026-07-12T03:50:46,London,jazz,1,20260712T035046_london_jazz_page1.json,200,success
+2026-07-12T03:50:48,London,jazz,2,20260712T035048_london_jazz_page2.json,108,success
+2026-07-12T03:50:50,London,rock,0,20260712T035050_london_rock_page0.json,200,success
+2026-07-12T03:50:52,London,rock,1,20260712T035052_london_rock_page1.json,200,success
+2026-07-12T03:50:55,London,rock,2,20260712T035054_london_rock_page2.json,200,success
+2026-07-12T03:50:56,London,classical,0,20260712T035056_london_classical_page0.json,23,success
+2026-07-12T03:50:57,London,classical,1,20260712T035057_london_classical_page1.json,0,success
+2026-07-12T03:50:58,London,classical,2,20260712T035058_london_classical_page2.json,0,success
+2026-07-12T03:51:00,London,opera,0,20260712T035100_london_opera_page0.json,200,success
+2026-07-12T03:51:02,London,opera,1,20260712T035102_london_opera_page1.json,104,success
+2026-07-12T03:51:03,London,opera,2,20260712T035103_london_opera_page2.json,0,success
+2026-07-12T03:51:06,London,museum,0,20260712T035105_london_museum_page0.json,200,success
+2026-07-12T03:51:08,London,museum,1,20260712T035107_london_museum_page1.json,200,success
+2026-07-12T03:51:09,London,museum,2,20260712T035109_london_museum_page2.json,200,success
+2026-07-12T03:51:12,London,exhibition,0,20260712T035111_london_exhibition_page0.json,200,success
+2026-07-12T03:51:13,London,exhibition,1,20260712T035113_london_exhibition_page1.json,200,success
+2026-07-12T03:51:15,London,exhibition,2,20260712T035115_london_exhibition_page2.json,200,success
+2026-07-12T03:51:17,London,film festival,0,20260712T035117_london_film_festival_page0.json,66,success
+2026-07-12T03:51:18,London,film festival,1,20260712T035118_london_film_festival_page1.json,0,success
+2026-07-12T03:51:19,London,film festival,2,20260712T035119_london_film_festival_page2.json,0,success
+2026-07-12T03:51:21,London,comedy,0,20260712T035121_london_comedy_page0.json,200,success
+2026-07-12T03:51:23,London,comedy,1,20260712T035123_london_comedy_page1.json,200,success
+2026-07-12T03:51:26,London,comedy,2,20260712T035125_london_comedy_page2.json,200,success
+2026-07-12T03:51:28,London,theatre,0,20260712T035127_london_theatre_page0.json,200,success
+2026-07-12T03:51:30,London,theatre,1,20260712T035130_london_theatre_page1.json,200,success
+2026-07-12T03:51:32,London,theatre,2,20260712T035132_london_theatre_page2.json,200,success
+2026-07-12T03:51:34,Vienna,jazz,0,20260712T035134_vienna_jazz_page0.json,5,success
+2026-07-12T03:51:35,Vienna,jazz,1,20260712T035135_vienna_jazz_page1.json,0,success
+2026-07-12T03:51:36,Vienna,jazz,2,20260712T035136_vienna_jazz_page2.json,0,success
+2026-07-12T03:51:37,Vienna,rock,0,20260712T035137_vienna_rock_page0.json,84,success
+2026-07-12T03:51:39,Vienna,rock,1,20260712T035139_vienna_rock_page1.json,0,success
+2026-07-12T03:51:40,Vienna,rock,2,20260712T035140_vienna_rock_page2.json,0,success
+2026-07-12T03:51:41,Vienna,classical,0,20260712T035141_vienna_classical_page0.json,4,success
+2026-07-12T03:51:42,Vienna,classical,1,20260712T035142_vienna_classical_page1.json,0,success
+2026-07-12T03:51:43,Vienna,classical,2,20260712T035143_vienna_classical_page2.json,0,success
+2026-07-12T03:51:44,Vienna,opera,0,20260712T035144_vienna_opera_page0.json,1,success
+2026-07-12T03:51:45,Vienna,opera,1,20260712T035145_vienna_opera_page1.json,0,success
+2026-07-12T03:51:47,Vienna,opera,2,20260712T035147_vienna_opera_page2.json,0,success
+2026-07-12T03:51:48,Vienna,museum,0,20260712T035148_vienna_museum_page0.json,0,success
+2026-07-12T03:51:49,Vienna,museum,1,20260712T035149_vienna_museum_page1.json,0,success
+2026-07-12T03:51:50,Vienna,museum,2,20260712T035150_vienna_museum_page2.json,0,success
+2026-07-12T03:51:52,Vienna,exhibition,0,20260712T035152_vienna_exhibition_page0.json,0,success
+2026-07-12T03:51:53,Vienna,exhibition,1,20260712T035153_vienna_exhibition_page1.json,0,success
+2026-07-12T03:51:54,Vienna,exhibition,2,20260712T035154_vienna_exhibition_page2.json,0,success
+2026-07-12T03:51:56,Vienna,film festival,0,20260712T035156_vienna_film_festival_page0.json,0,success
+2026-07-12T03:51:58,Vienna,film festival,1,20260712T035158_vienna_film_festival_page1.json,0,success
+2026-07-12T03:51:59,Vienna,film festival,2,20260712T035159_vienna_film_festival_page2.json,0,success
+2026-07-12T03:52:00,Vienna,comedy,0,20260712T035200_vienna_comedy_page0.json,3,success
+2026-07-12T03:52:02,Vienna,comedy,1,20260712T035202_vienna_comedy_page1.json,0,success
+2026-07-12T03:52:03,Vienna,comedy,2,20260712T035203_vienna_comedy_page2.json,0,success
+2026-07-12T03:52:04,Vienna,theatre,0,20260712T035204_vienna_theatre_page0.json,52,success
+2026-07-12T03:52:06,Vienna,theatre,1,20260712T035206_vienna_theatre_page1.json,0,success
+2026-07-12T03:52:07,Vienna,theatre,2,20260712T035207_vienna_theatre_page2.json,0,success
+2026-07-12T03:52:08,Barcelona,jazz,0,20260712T035208_barcelona_jazz_page0.json,2,success
+2026-07-12T03:52:10,Barcelona,jazz,1,20260712T035210_barcelona_jazz_page1.json,0,success
+2026-07-12T03:52:11,Barcelona,jazz,2,20260712T035211_barcelona_jazz_page2.json,0,success
+2026-07-12T03:52:12,Barcelona,rock,0,20260712T035212_barcelona_rock_page0.json,50,success
+2026-07-12T03:52:14,Barcelona,rock,1,20260712T035214_barcelona_rock_page1.json,0,success
+2026-07-12T03:52:15,Barcelona,rock,2,20260712T035215_barcelona_rock_page2.json,0,success
+2026-07-12T03:52:16,Barcelona,classical,0,20260712T035216_barcelona_classical_page0.json,2,success
+2026-07-12T03:52:18,Barcelona,classical,1,20260712T035218_barcelona_classical_page1.json,0,success
+2026-07-12T03:52:20,Barcelona,classical,2,20260712T035220_barcelona_classical_page2.json,0,success
+2026-07-12T03:52:22,Barcelona,opera,0,20260712T035222_barcelona_opera_page0.json,0,success
+2026-07-12T03:52:23,Barcelona,opera,1,20260712T035223_barcelona_opera_page1.json,0,success
+2026-07-12T03:52:25,Barcelona,opera,2,20260712T035225_barcelona_opera_page2.json,0,success
+2026-07-12T03:52:27,Barcelona,museum,0,20260712T035227_barcelona_museum_page0.json,0,success
+2026-07-12T03:52:29,Barcelona,museum,1,20260712T035229_barcelona_museum_page1.json,0,success
+2026-07-12T03:52:30,Barcelona,museum,2,20260712T035230_barcelona_museum_page2.json,0,success
+2026-07-12T03:52:32,Barcelona,exhibition,0,20260712T035232_barcelona_exhibition_page0.json,0,success
+2026-07-12T03:52:33,Barcelona,exhibition,1,20260712T035233_barcelona_exhibition_page1.json,0,success
+2026-07-12T03:52:35,Barcelona,exhibition,2,20260712T035235_barcelona_exhibition_page2.json,0,success
+2026-07-12T03:52:36,Barcelona,film festival,0,20260712T035236_barcelona_film_festival_page0.json,0,success
+2026-07-12T03:52:37,Barcelona,film festival,1,20260712T035237_barcelona_film_festival_page1.json,0,success
+2026-07-12T03:52:39,Barcelona,film festival,2,20260712T035239_barcelona_film_festival_page2.json,0,success
+2026-07-12T03:52:40,Barcelona,comedy,0,20260712T035240_barcelona_comedy_page0.json,0,success
+2026-07-12T03:52:41,Barcelona,comedy,1,20260712T035241_barcelona_comedy_page1.json,0,success
+2026-07-12T03:52:43,Barcelona,comedy,2,20260712T035243_barcelona_comedy_page2.json,0,success
+2026-07-12T03:52:44,Barcelona,theatre,0,20260712T035244_barcelona_theatre_page0.json,0,success
+2026-07-12T03:52:45,Barcelona,theatre,1,20260712T035245_barcelona_theatre_page1.json,0,success
+2026-07-12T03:52:47,Barcelona,theatre,2,20260712T035247_barcelona_theatre_page2.json,0,success
