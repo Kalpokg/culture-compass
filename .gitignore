@@ -6,6 +6,9 @@ __pycache__/
 *.py[cod]
 *.pyo
 
+
+# Raw API responses
+data/raw/
 # ==========================================
 # Virtual Environments
 # ==========================================

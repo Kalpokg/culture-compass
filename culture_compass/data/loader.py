@@ -1,15 +1,15 @@
-from pathlib import Path
+from culture_compass.data.database_loader import load_from_database
+from culture_compass.features.text_features import create_event_text
 
 import pandas as pd
 
 
 def load_dataset():
+    df = load_from_database()
 
-    filepath = Path("data/processed/events.parquet")  # use your actual filename
+    if not df.empty:
+        df["date"] = pd.to_datetime(df["date"])
 
-    df = pd.read_parquet(filepath)
-
-    # Convert after loading
-    df["date"] = pd.to_datetime(df["date"])
+    df = create_event_text(df)
 
     return df
