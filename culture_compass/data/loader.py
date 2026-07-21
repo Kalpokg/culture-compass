@@ -9,6 +9,9 @@ def load_dataset():
 
     if not df.empty:
         df["date"] = pd.to_datetime(df["date"])
+    print(df.shape)
+    print(df.columns.tolist())
+    print(df.head())
 
     df = create_event_text(df)
 

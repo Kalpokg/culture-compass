@@ -1,5 +1,5 @@
 from datetime import date, time
-
+from culture_compass.utils.country import normalize_country
 from culture_compass.models.canonical_event import CanonicalEvent
 
 
@@ -29,6 +29,13 @@ def parse(response: dict) -> list[CanonicalEvent]:
             "classifications",
             [{}],
         )[0]
+        
+        raw_country = venue.get("country", {})
+
+        country = normalize_country(
+              raw_country.get("countryCode")
+             or raw_country.get("name")
+        )
 
         # -----------------------------------------
         # Classification
@@ -127,10 +134,7 @@ def parse(response: dict) -> list[CanonicalEvent]:
                     {},
                 ).get("name"),
 
-                country=venue.get(
-                    "country",
-                    {},
-                ).get("name"),
+                country=country,
 
                 latitude=float(
                     venue.get(

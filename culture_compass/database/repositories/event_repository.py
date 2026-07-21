@@ -25,32 +25,49 @@ class EventRepository:
     def save(
         self,
         event: CanonicalEvent,
-    ) -> Event:
+    ) -> None:
         """
         Save a single event.
         """
 
         with get_session() as session:
-            return self._save(
+            self._save(
                 session,
                 event,
             )
 
-    def save_many(
-        self,
-        events: list[CanonicalEvent],
-    ) -> None:
-        """
-        Save multiple events using a single transaction.
-        """
+    def save_many(self, events):
+        inserted = 0
+        skipped = 0
 
         with get_session() as session:
+             for event in events:
+                 try:
+                    if self._save(session, event):
+                       inserted += 1
 
-            for event in events:
-                self._save(
-                    session,
-                    event,
-                )
+                 except ValueError as e:
+                     logger.warning(
+                       "Skipping event '%s': %s",
+                       event.event_name,
+                      e,
+                      )
+                     skipped += 1
+                     session.rollback()
+
+                 except Exception:
+                    session.rollback()
+                    raise
+
+             
+
+        logger.info(
+            "Finished batch. Inserted: %d | Skipped: %d",
+             inserted,
+             skipped,
+        )
+
+        return inserted
 
     # ---------------------------------------------------------
     # Internal save
@@ -60,7 +77,7 @@ class EventRepository:
         self,
         session,
         event: CanonicalEvent,
-    ) -> Event:
+    ) -> bool:
 
         source = self._resolve_source(
             session,
@@ -71,6 +88,16 @@ class EventRepository:
             session,
             event.country,
         )
+
+        logger.warning(
+         "Event=%r | city=%r | country=%r | venue=%r",
+          event.event_name,
+          event.city,
+          event.country,
+          event.venue_name,
+        )
+
+        logger.warning("Resolved country: %r", country)
 
         city = self._resolve_city(
             session,
@@ -285,7 +312,7 @@ class EventRepository:
         source: Source,
         venue: Venue,
         genre: Genre | None,
-    ) -> Event:
+    ) -> bool:
 
         existing = session.scalar(
             select(Event).where(
@@ -301,7 +328,7 @@ class EventRepository:
                 event.event_name,
             )
 
-            return existing
+            return False
 
         db_event = Event(
             source_id=source.id,
@@ -323,4 +350,4 @@ class EventRepository:
             db_event.event_name,
         )
 
-        return db_event
+        return True

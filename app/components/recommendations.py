@@ -23,11 +23,8 @@ def recommendation_cards(title, df):
 
             image = row.get("image_url")
 
-            if image:
-                st.image(
-                    image,
-                    width="stretch",
-                )
+            if isinstance(image, str) and image.strip():
+               st.image(image, width="stretch")
 
             # -------------------------------------------------
             # Event Title
