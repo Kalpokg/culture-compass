@@ -2,10 +2,10 @@ import streamlit as st
 from pathlib import Path
 
 from culture_compass.data.loader import load_dataset
-from culture_compass.search.event_search import EventSearch
 from culture_compass.recommender.content_based import (
     ContentBasedRecommender,
 )
+from culture_compass.services.event_service import EventService
 
 from app.components.sidebar import sidebar
 from app.components.event_card import event_card
@@ -24,14 +24,13 @@ def main():
     css = Path("app/styles/style.css").read_text()
 
     st.markdown(
-              f"<style>{css}</style>",
-              unsafe_allow_html=True,
-               )
-
-    
+        f"<style>{css}</style>",
+        unsafe_allow_html=True,
+    )
 
     # =====================================================
-    # Load Dataset
+    # Temporary DataFrame
+    # (Still needed for recommender and event details)
     # =====================================================
 
     df = load_dataset()
@@ -43,15 +42,15 @@ def main():
     st.markdown("# 🎭 CultureCompass")
 
     st.markdown(
-    """
-       ### Discover concerts, theatre, museums and festivals across Europe.
-    """
+        """
+        ### Discover concerts, theatre, museums and festivals across Europe.
+        """
     )
 
     st.caption(
-              f"{len(df):,} events • "
-              f"{df['city'].nunique()} cities • "
-              f"{df['country'].nunique()} countries"
+        f"{len(df):,} events • "
+        f"{df['city'].nunique()} cities • "
+        f"{df['country'].nunique()} countries"
     )
 
     st.divider()
@@ -60,7 +59,7 @@ def main():
     # Backend
     # =====================================================
 
-    search = EventSearch(df)
+    service = EventService()
 
     recommender = ContentBasedRecommender()
     recommender.fit(df)
@@ -69,11 +68,7 @@ def main():
     # Sidebar
     # =====================================================
 
-    query, city = sidebar(df)
-
-    # =====================================================
-    # Search
-    # =====================================================
+    query, country, city, genre, start_date, end_date = sidebar(service)
 
     # =====================================================
     # Number of displayed results
@@ -82,10 +77,18 @@ def main():
     if "results_limit" not in st.session_state:
         st.session_state.results_limit = 20
 
-    results = search.search(
-           query=query if query else None,
-           city=city,
-           top_n=st.session_state.results_limit,
+    # =====================================================
+    # Database Search
+    # =====================================================
+
+    results = service.search_events(
+        text=query if query else None,
+        city=city,
+        country=country,
+        genre=genre,
+        start_date=start_date,
+        end_date=end_date,
+        limit=st.session_state.results_limit,
     )
 
     # =====================================================
@@ -110,33 +113,32 @@ def main():
         st.subheader("🔍 Search Results")
 
         st.caption(
-           f"Showing {len(results)} events"
+            f"Showing {len(results)} events"
         )
 
-        if results.empty:
+        if not results:
 
             st.info("No events found.")
 
         else:
 
-            for _, event in results.iterrows():
+            for event in results:
 
                 if event_card(event):
 
-                   st.session_state.selected_event = event["event_id"]
+                    st.session_state.selected_event = event.id
 
                 st.write("")
 
             if len(results) == st.session_state.results_limit:
 
-               if st.button(
+                if st.button(
                     "Load More",
-                     width="stretch",
-                     ):
+                    width="stretch",
+                ):
 
-                  st.session_state.results_limit += 20
-
-                  st.rerun()
+                    st.session_state.results_limit += 20
+                    st.rerun()
 
     # =====================================================
     # RIGHT PANEL
@@ -152,10 +154,10 @@ def main():
 
         else:
 
-            selected_event = df[
-                df["event_id"]
-                == st.session_state.selected_event
-            ].iloc[0]
+            # updated to Postgresql
+            selected_event = service.get_event(
+              st.session_state.selected_event
+            )
 
             # -------------------------
             # Event Details
@@ -168,10 +170,10 @@ def main():
             # -------------------------
 
             same_dates = recommender.recommend_same_event_dates(
-                event_name=selected_event["event_name"],
-                event_id=selected_event["event_id"],
+                event_name=selected_event.event_name,
+                event_id=selected_event.source_event_id,
                 top_n=5,
-            )
+           )
 
             recommendation_cards(
                 "📅 More Dates",
@@ -183,9 +185,10 @@ def main():
             # -------------------------
 
             similar = recommender.recommend_similar_events(
-                event_id=selected_event["event_id"],
-                top_n=5,
+                    event_id=selected_event.source_event_id,
+                    top_n=5,
             )
+
 
             recommendation_cards(
                 "✨ Similar Events",

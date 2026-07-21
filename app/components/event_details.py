@@ -1,7 +1,9 @@
 import streamlit as st
 
+from culture_compass.dto.event import EventDTO
 
-def event_details(event):
+
+def event_details(event: EventDTO):
     """
     Display the selected event.
     """
@@ -12,17 +14,15 @@ def event_details(event):
     # Hero Image
     # -------------------------------------------------
 
-    image = event.get("image_url")
-
-    if isinstance(image, str) and image.strip():
-            st.image(image, width="stretch")
+    if event.image_url:
+        st.image(event.image_url, width="stretch")
 
     # -------------------------------------------------
     # Event Title
     # -------------------------------------------------
 
     st.markdown(
-        f"# {event['event_name']}"
+        f"# {event.event_name}"
     )
 
     # -------------------------------------------------
@@ -30,16 +30,29 @@ def event_details(event):
     # -------------------------------------------------
 
     st.markdown(
-        f"**🎵 Genre:** {event['genre'].title()}"
+        f"**🎵 Genre:** {event.genre.title()}"
     )
 
     st.markdown(
-        f"**📍 City:** {event['city'].title()}"
+        f"**📍 Venue:** {event.venue}"
     )
 
     st.markdown(
-        f"**📅 Date:** {event['date'].strftime('%d %b %Y')}"
+        f"**🏙 City:** {event.city}"
     )
+
+    st.markdown(
+        f"**🌍 Country:** {event.country}"
+    )
+
+    st.markdown(
+        f"**📅 Date:** {event.event_date.strftime('%d %b %Y')}"
+    )
+
+    if event.event_time:
+        st.markdown(
+            f"**🕒 Time:** {event.event_time.strftime('%H:%M')}"
+        )
 
     st.write("")
 
@@ -47,8 +60,9 @@ def event_details(event):
     # Ticket Button
     # -------------------------------------------------
 
-    st.link_button(
-        "🎟 Buy Tickets",
-        event["url"],
-        width="stretch",
-    )
+    if event.ticket_url:
+        st.link_button(
+            "🎟 Buy Tickets",
+            event.ticket_url,
+            width="stretch",
+        )

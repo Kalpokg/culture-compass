@@ -1,9 +1,11 @@
 import streamlit as st
 
+from culture_compass.dto.event import EventDTO
 
-def event_card(event):
+
+def event_card(event: EventDTO) -> bool:
     """
-    Display an event as a search result card.
+    Display an event search result card.
     """
 
     with st.container(border=True):
@@ -12,17 +14,15 @@ def event_card(event):
         # Event Image
         # -------------------------------------------------
 
-        image = event.get("image_url")
-
-        if isinstance(image, str) and image.strip():
-            st.image(image, width="stretch")
+        if event.image_url:
+            st.image(event.image_url, width="stretch")
 
         # -------------------------------------------------
         # Event Title
         # -------------------------------------------------
 
         st.markdown(
-            f"### {event['event_name']}"
+            f"### {event.event_name}"
         )
 
         # -------------------------------------------------
@@ -30,12 +30,12 @@ def event_card(event):
         # -------------------------------------------------
 
         st.caption(
-            f"📍 {event['city'].title()} • "
-            f"📅 {event['date'].strftime('%d %b %Y')}"
+            f"📍 {event.city.title()} • "
+            f"📅 {event.event_date.strftime('%d %b %Y')}"
         )
 
         st.markdown(
-            f"**🎵 {event['genre'].title()}**"
+            f"**🎵 {event.genre.title()}**"
         )
 
         st.write("")
@@ -46,6 +46,6 @@ def event_card(event):
 
         return st.button(
             "Select",
-            key=event["event_id"],
+            key=event.id,
             width="stretch",
         )

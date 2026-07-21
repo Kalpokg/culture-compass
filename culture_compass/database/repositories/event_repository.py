@@ -1,5 +1,5 @@
 from sqlalchemy import select
-
+from datetime import date
 from culture_compass.database.models import (
     City,
     Country,
@@ -8,6 +8,7 @@ from culture_compass.database.models import (
     Source,
     Venue,
 )
+from sqlalchemy.orm import joinedload
 from culture_compass.database.session import get_session
 from culture_compass.models.canonical_event import CanonicalEvent
 from culture_compass.utils.logger import logger
@@ -351,3 +352,137 @@ class EventRepository:
         )
 
         return True
+    def search_events(
+        self,
+        *,
+        text: str | None = None,
+        city: str | None = None,
+        country: str | None = None,
+        genre: str | None = None,
+        provider: str | None = None,
+        start_date: date | None = None,
+        end_date: date | None = None,
+        limit: int = 20,
+     ):
+       """
+       Search events using optional filters.
+       """
+       
+       with get_session() as session:
+           query = (
+                    select(Event)
+                    .join(Event.venue)
+                    .join(Venue.city)
+                    .join(City.country)
+                    .join(Event.genre)
+                    .join(Event.source)
+                    .options(
+                       joinedload(Event.venue)
+                       .joinedload(Venue.city)
+                       .joinedload(City.country),
+                       joinedload(Event.genre),
+                       joinedload(Event.source),
+                    )
+           )
+
+           if text:
+               query = query.where(Event.event_name.ilike(f"%{text}%"))
+
+           if city:
+               query = query.where(City.name.ilike(f"%{city}%"))
+
+           if country:
+               query = query.where(Country.name.ilike(f"%{country}%"))
+
+           if genre:
+               query = query.where(Genre.name.ilike(f"%{genre}%"))
+
+           if provider:
+               query = query.where(Source.name.ilike(f"%{provider}%"))
+
+           if start_date:
+               query = query.where(Event.event_date >= start_date)
+
+           if end_date:
+               query = query.where(Event.event_date <= end_date)
+
+           results = session.execute(query.limit(limit)).scalars().all()
+
+       return results
+    
+    def get_countries(self) -> list[str]:
+
+        with get_session() as session:
+
+             query = (
+                    select(Country.name)
+                    .order_by(Country.name)
+              )
+
+             return session.execute(query).scalars().all()
+    
+    def get_cities(
+           self,
+           country: str | None = None,
+            ) -> list[str]:
+
+        with get_session() as session:
+
+             query = (
+               select(City.name)
+               .join(City.country)
+             )
+
+             if country:
+
+                query = query.where(
+                Country.name == country
+               )
+
+             query = (
+                    query
+                    .distinct()
+                    .order_by(City.name)
+              )
+
+             return session.execute(query).scalars().all()
+    
+    def get_genres(self) -> list[str]:
+
+        with get_session() as session:
+
+             query = (
+                  select(Genre.name)
+                  .order_by(Genre.name)
+              )
+
+             return session.execute(query).scalars().all()
+    
+    def get_providers(self) -> list[str]:
+
+        with get_session() as session:
+
+             query = (
+                   select(Source.name)
+                   .order_by(Source.name)
+            )
+
+             return session.execute(query).scalars().all()
+    
+
+    def get_event(self, event_id: int) -> Event:
+        with get_session() as session:
+
+             query = (
+                    select(Event)
+                    .options(
+                     joinedload(Event.venue)
+                    .joinedload(Venue.city)
+                    .joinedload(City.country),
+                     joinedload(Event.genre),
+                     joinedload(Event.source),
+                   )
+                   .where(Event.id == event_id)
+                    )
+
+             return session.execute(query).scalar_one_or_none()
