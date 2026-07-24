@@ -23,12 +23,10 @@ KEYWORDS = [
 ]
 
 
-def main():
-
+def load_ticketmaster():
     pipeline = TicketmasterPipeline()
 
     current_year = datetime.now().year
-
     total_events = 0
 
     windows = list(
@@ -46,24 +44,19 @@ def main():
     )
 
     for country in COUNTRIES:
-
         country_total = 0
 
         for keyword in KEYWORDS:
-
             keyword_total = 0
 
             for start_date, end_date in windows:
-
                 print(
                     "\n"
                     "========================================\n"
                     f"Country : {country}\n"
                     f"Keyword : {keyword}\n"
-                    f"Window  : "
-                    f"{start_date:%Y-%m-%d} "
-                    f"to "
-                    f"{end_date:%Y-%m-%d}\n"
+                    f"Window  : {start_date:%Y-%m-%d} "
+                    f"to {end_date:%Y-%m-%d}\n"
                     "========================================"
                 )
 
@@ -99,4 +92,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    load_ticketmaster()

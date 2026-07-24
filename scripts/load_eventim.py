@@ -18,18 +18,15 @@ KEYWORDS = [
 ]
 
 
-def main():
-
+def load_eventim():
     pipeline = EventimPipeline()
 
     total_events = 0
 
     for country in COUNTRIES:
-
         country_total = 0
 
         for keyword in KEYWORDS:
-
             print(
                 "\n"
                 "========================================\n"
@@ -66,4 +63,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    load_eventim()
