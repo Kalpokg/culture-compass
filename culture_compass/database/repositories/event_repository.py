@@ -269,7 +269,8 @@ class EventRepository:
             venue = session.scalar(
                 select(Venue).where(
                     Venue.source_venue_id
-                    == event.source_venue_id
+                    == event.source_venue_id,
+                    Venue.city_id == city.id,
                 )
             )
 
